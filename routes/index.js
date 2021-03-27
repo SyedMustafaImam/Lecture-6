@@ -8,11 +8,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/about', function(req, res, next) {
-  res.render('index', {page:'About us', menuId:'about'});
+  res.render('about', {page:'About us', menuId:'about'});
 });
 
 router.get('/contact', function(req, res, next) {
-  res.render('index', {page:'Contact us', menuId:'contact'});
+  res.render('contact', {page:'Contact us', menuId:'contact'});
 });
 
 router.get('/student', student_controller.list);
