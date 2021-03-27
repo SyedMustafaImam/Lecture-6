@@ -41,6 +41,6 @@ exports.student_delete = (req, res) => {
 exports.list = (req, res) => {
     Student.find((err, student) => {
         if (err) {console.log("Error in retrieving students list",+ JSON.stringify(err,undefined, 2));}
-        res.render('student', {page : 'Student List', menuid: 'list', student: student});
+        res.render('student', {page : 'Student List', student: student});
     })
 }
